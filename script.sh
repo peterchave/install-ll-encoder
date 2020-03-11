@@ -27,3 +27,5 @@ ffmpeg \
 -media_seg_name "$timestamp"'/chunk-stream_$RepresentationID$-$Number%05d$.$ext$' \
 -init_seg_name "$timestamp"'/init-stream$RepresentationID$.$ext$' \
 -f dash \
+
+# Add your entrypoint on the line above
