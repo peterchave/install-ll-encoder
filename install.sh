@@ -39,11 +39,16 @@ sudo make install
 
 # Download test clip
 cd ..
-wget https://moctodemo.akamaized.net/content/1080p29-15M-MostAwesomeGameFull.mp4
+wget https://moctodemo.akamaized.net/content/testclip.mp4
 
-# Install PM2 to run it
+# Install PM2 to run it, save the config, make it start at boot and then shut it down for further config
 sudo apt-get -y install npm
 sudo npm install pm2@latest -g
+chmod +x script.sh
 pm2 start script.sh
 pm2 save
-pm2 startup
+pm2 startup | tail -n 1 > startup.sh
+chmod +x startup.sh
+./startup.sh
+rm startup.sh
+pm2 stop script.sh
