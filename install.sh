@@ -20,7 +20,7 @@ sudo apt-get update -qq && sudo apt-get -y install \
   zlib1g-dev
 
 # Optional FFMPEG assemblers
-sudo apt-get -y install nasm yasm libx264-dev
+sudo apt-get -y install nasm yasm
 
 # Codec x264
 sudo apt-get -y install libx264-dev
