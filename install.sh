@@ -29,7 +29,7 @@ sudo apt-get -y install libx264-dev
 sudo apt-get -y install fonts-freefont-ttf
 
 # Get DASH-LL branch from github
-git clone --branch dashll https://gitlab.com/fflabs/ffmpeg.git
+git clone https://github.com/FFmpeg/FFmpeg.git
 
 # Configure, make and install it
 cd ffmpeg
@@ -52,3 +52,4 @@ chmod +x startup.sh
 ./startup.sh
 rm startup.sh
 pm2 stop script.sh
+echo "TO FINISH: Modify script.sh to add entrypoint URL and then restart script with pm2 start script"
