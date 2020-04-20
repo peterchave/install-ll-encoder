@@ -4,6 +4,7 @@ To use:<br>
 Deploy 4 vCPU machine, with Ubuntu 18.04 LTS<br>
 git clone https://github.com/peterchave/install-ll-encoder.git<br>
 cd install-ll-encoder<br>
+chmod +x install.sh<br>
 ./install.sh<br>
 <br>
 Manifest inspector: http://moctodemo.akamaized.net/tools/watchdash/<br>
