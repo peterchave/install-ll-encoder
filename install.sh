@@ -32,7 +32,7 @@ sudo apt-get -y install fonts-freefont-ttf
 git clone https://github.com/FFmpeg/FFmpeg.git
 
 # Configure, make and install it
-cd ffmpeg
+cd FFmpeg
 ./configure --enable-gpl --enable-libx264 --enable-nonfree --enable-filter=drawtext --enable-libfreetype
 make
 sudo make install
