@@ -7,5 +7,4 @@ cd install-ll-encoder<br>
 chmod +x install.sh<br>
 ./install.sh<br>
 <br>
-Manifest inspector: http://moctodemo.akamaized.net/tools/watchdash/<br>
 Low latency test client: http://mediapm.edgesuite.net/will/dash/lowlatency/low-latency-public-variable.html?latency=3&url=
