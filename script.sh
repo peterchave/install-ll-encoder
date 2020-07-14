@@ -21,8 +21,14 @@ ffmpeg \
 -color_primaries bt709 -color_trc bt709 -colorspace bt709 \
 -tune zerolatency \
 \
--adaptation_sets "id=0,seg_duration=2,streams=v id=1,seg_duration=2,streams=a" \
--frag_type every_frame -use_timeline 0 -streaming 1 -ldash 1 -window_size 3 \
+-adaptation_sets "id=0,seg_duration=2.002,streams=v id=1,seg_duration=2.002,streams=a" \
+-use_timeline 0 -streaming 1 -window_size 3 \
+-frag_type every_frame -ldash 1 \
+-utc_timing_url "https://time.akamai.com?iso&amp;ms" \
+-format_options "movflags=cmaf" \
+-export_side_data prft \
+-write_prft 1 \
+-target_latency "3.0" \
 -http_user_agent Akamai_Broadcaster_v1.0 -http_persistent 1 \
 -media_seg_name "$timestamp"'/chunk-stream_$RepresentationID$-$Number%05d$.$ext$' \
 -init_seg_name "$timestamp"'/init-stream$RepresentationID$.$ext$' \
