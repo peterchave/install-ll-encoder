@@ -28,7 +28,7 @@ sudo apt-get -y install libx264-dev
 # Optional font library
 sudo apt-get -y install fonts-freefont-ttf
 
-# Get DASH-LL branch from github
+# Get FFMPEG from github (includes LL-DASH as part of main branch now)
 git clone https://github.com/FFmpeg/FFmpeg.git
 
 # Configure, make and install it
