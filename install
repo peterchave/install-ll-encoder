@@ -44,6 +44,7 @@ wget https://moctodemo.akamaized.net/content/testclip.mp4
 # Install PM2 to run it, save the config, make it start at boot and then shut it down for further config
 sudo apt-get -y install npm
 sudo npm install pm2@latest -g
+wget https://raw.githubusercontent.com/peterchave/install-ll-encoder/main/script.sh
 chmod +x script.sh
 pm2 start script.sh
 pm2 save
